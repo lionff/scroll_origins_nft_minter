@@ -1,1 +1,19 @@
-# scroll_origins_nft_minter
+# Scroll origins nft minter
+
+<b>Установка либ</b>
+
+pip install web3 requests
+
+<b>Настройка, вверху кода</b>
+
+MIX_WALLETS = True  # True если надо перемешать порядок кошельков, замените на False, если перемешивать не надо
+
+GAS = 50  # Значение газа, выше которого не минтим, а ждем
+
+SLEEP = (100, 300)  # Диапазон задержки междку кошельками
+
+<b>Запуск</b>
+
+создать priv.txt и в столбик все приватник
+
+python3 mint.py
